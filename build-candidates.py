@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import glob
+from modularAnalysis import inputMdstList
 from vertex import vertexRave
 from modularAnalysis import inputMdst, fillParticleList, reconstructDecay
 from modularAnalysis import ntupleFile, ntupleTree, process, statistics
@@ -8,6 +10,8 @@ from modularAnalysis import analysis_main # the default analysis path
 
 # load input ROOT file
 inputMdst('default', 'mdst-dstars.root')
+#files = glob.glob('/home/belle/rachac/skim/outputFiles/*ccbar.mdst.root')
+#inputMdstList('default', files)
 
 # --------------------------------------------------
 # Create and fill final state ParticleLists

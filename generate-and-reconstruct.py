@@ -10,7 +10,7 @@ import os
 import glob
 
 # analysis_main is the default path created in the modularAnalysis.py
-from modularAnalysis import analysis_main, generateContinuum, loadGearbox, process
+from modularAnalysis import analysis_main, generateContinuum, loadGearbox, process, statistics
 from beamparameters import add_beamparameters
 from simulation     import add_simulation
 from reconstruction import add_reconstruction
